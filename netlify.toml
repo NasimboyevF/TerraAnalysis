@@ -1,7 +1,7 @@
 [build]
   base = "frontend"
   command = "npm run build"
-  publish = "frontend/dist"
+  publish = "dist"
 
 # SPA: любой путь, которого нет как файла, отдаём в index.html —
 # иначе прямой заход на /samples вернёт 404 (React Router работает на клиенте)
