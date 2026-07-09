@@ -1,0 +1,17 @@
+# Зависимости — не коммитятся, устанавливаются через npm install
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Переменные окружения — содержат секреты, нельзя в Git
+.env
+backend/.env
+frontend/.env
+
+# Сборка
+frontend/dist/
+frontend/.vite/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
