@@ -5,10 +5,6 @@
 
 # SPA: любой путь, которого нет как файла, отдаём в index.html —
 # иначе прямой заход на /samples вернёт 404 (React Router работает на клиенте)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 # Прокси на backend, чтобы фронт мог ходить на /api так же, как в dev-режиме
 # (замени URL на реальный адрес backend после деплоя на Render/Railway)
@@ -17,3 +13,12 @@
   to = "https://terraanalysis.onrender.com"
   status = 200
   force = true
+
+
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
