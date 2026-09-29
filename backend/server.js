@@ -41,7 +41,7 @@ app.use(helmet());
 
 // cors разрешает запросы с фронтенда (localhost:5173 — порт Vite по умолчанию)
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: process.env.CLIENT_URL || 'http://localhost:5173'  || 'https://terra-analysis.vercel.app',
   credentials: true,
 }));
 
